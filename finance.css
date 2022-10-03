@@ -1,0 +1,878 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: rgb(4, 2, 8);
+    max-width: auto;
+    
+}
+
+html {
+    margin-left: 75px;
+    
+}
+
+.welcome {
+    margin-top: 20px;
+    color: white;
+    font-size: 12px;
+    padding: 10px 0;
+    margin-left: 20px;
+}
+
+.dashboard_ {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 0;
+    margin-left: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.container i {
+    color: grey;
+}
+
+.wrapper {
+    margin-left: -15%;
+    display: flex;
+    flex-direction: row;
+}
+
+.paragraph {
+    margin-top: -32px;
+}
+
+.imgs {
+    margin-left: -400%;
+}
+
+.wrapper a {
+    text-decoration: none;
+    color: grey;
+}
+
+#search {
+    margin-left: 373%;
+}
+
+.top-icon {
+    margin-left: 68%;
+    display: flex;
+
+}
+
+.logo2 {
+    position: relative;
+    text-align: center;
+    padding: 15px;
+    border-width: 10px;
+    border: 2px solid white;
+    background-color: rgb(52, 240, 177);
+    width: 1px;
+    height: 2px;
+    border-radius: 30%;
+    display: flex;
+    left: 50%;
+    top: -5px;
+    box-shadow: 2px 1px 1px 2px grey;
+}
+
+input {
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 25px;
+    width: 150px;
+    padding: 10px;
+}
+
+.circle {
+    position: relative;
+    text-align: center;
+    padding: 15px;
+    border-width: 10px;
+    border: 5px solid white;
+    background-color: rgb(52, 240, 177);
+    width: 0px;
+    height: 0px;
+    border-radius: 100%;
+    display: flex;
+    left: 12px;
+    top: -55px;
+}
+
+.menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 75px;
+    height: 100%;
+    background: rgb(4, 2, 8);
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.menu_ {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    text-decoration: none;
+    color: #666666;
+    transition: background 0.3s;
+    top: -25px
+}
+
+.menu_>i {
+    font-size: 1em;
+}
+
+.menu_:hover {
+    background: rgb(52, 240, 177);
+}
+
+.menu_::after {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+    /* content: attr(data-tooltip); */
+    margin-left: 15px;
+    white-space: nowrap;
+    padding: 7px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    background: rgba(0.0.0.8);
+    border-radius: 15px;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+}
+
+.menu_:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.invent_ {
+    padding: 15px;
+    margin: 30px 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 885px;
+    margin-top: -250px;
+}
+
+.main-inventory {
+    padding-top: 300px;
+}
+
+.inventory {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.inv-icon {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.inv-icon i {
+    color: grey;
+}
+
+.calender,
+.option1 {
+    margin: 0 10px;
+}
+
+.rect1 {
+    width: 50%;
+    height: 100px;
+    background-color: rgb(206, 241, 206);
+    margin: 20px 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.yobal,
+.yobal-amount,
+.yobal-card {
+    color: black;
+    background-color: rgb(206, 241, 206);
+    padding: 5px 5px;
+    margin: 2px 10px;
+}
+
+.yobal {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.yobal-amount {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.yobal-card {
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.rect2 {
+    width: 50%;
+    height: 100px;
+    background-color: rgb(26, 192, 123);
+    margin-top: -120px;
+    margin-left: 50%;
+    border: none solid;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#detail-value {
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(206, 241, 206);
+    width: 80px;
+    padding: 5px;
+}
+
+button span {
+    background-color: rgb(206, 241, 206);
+    font-size: 12px;
+}
+
+#detail-value .fa-solid {
+    background-color: rgb(206, 241, 206);
+    margin: 0 5px;
+}
+
+#detail-value {
+    margin: 60px 330px;
+}
+
+.info span {
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.info {
+    margin: 10px 0;
+}
+
+.info .fa-solid {
+    color: #666666;
+    margin: 0 5px;
+}
+
+.fa-filter {
+    margin-left: 95%;
+}
+
+.filter a {
+    color: grey;
+    text-decoration: none;
+}
+
+.rect3 {
+    height: 150px;
+    width: 270px;
+    border: 1px solid;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, rgb(230, 196, 230) 70%, rgb(168, 73, 168) 50%);
+    position: relative;
+    margin: 30px 0;
+    left: 0;
+}
+
+.rect3 img {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    left: 200px;
+    top: 20px;
+    background: transparent;
+}
+
+.shopping3 {
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    top: 30px;
+    margin: 0 15px;
+    background: rgb(230, 196, 230);
+}
+
+.name3 {
+    position: absolute;
+    font-size: 14px;
+    top: 80px;
+    margin: 0 15px;
+    background: rgb(230, 196, 230);
+}
+
+.ast3 {
+    position: absolute;
+    font-size: 14px;
+    top: 80px;
+    margin-left: 140px;
+    font-weight: bold;
+    font-size: 16px;
+    background: rgb(230, 196, 230);
+}
+
+.exp3 {
+    position: absolute;
+    font-size: 14px;
+    top: 120px;
+    margin: 0 15px;
+    background: rgb(168, 73, 168);
+}
+
+.VISA3 {
+    position: absolute;
+    font-size: 14px;
+    font-weight: bolder;
+    top: 120px;
+    margin: 0 207px;
+    background: rgb(168, 73, 168);
+}
+
+.rect4 {
+    height: 150px;
+    width: 270px;
+    border: 1px solid;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, rgb(252, 220, 160) 70%, rgb(248, 162, 91) 50%);
+    position: relative;
+    margin: 30px 0;
+    bottom: 180px;
+    left: 290px;
+}
+
+.rect4 img {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    left: 200px;
+    top: 20px;
+    background: transparent;
+}
+
+.shopping4 {
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    top: 30px;
+    margin: 0 15px;
+    background: rgb(252, 220, 160);
+}
+
+.name4 {
+    position: absolute;
+    font-size: 14px;
+    top: 80px;
+    margin: 0 15px;
+    background: rgb(252, 220, 160);
+}
+
+.ast4 {
+    position: absolute;
+    font-size: 14px;
+    top: 80px;
+    margin-left: 105px;
+    font-weight: bold;
+    font-size: 16px;
+    background: rgb(252, 220, 160);
+}
+
+.exp4 {
+    position: absolute;
+    font-size: 14px;
+    top: 120px;
+    margin: 0 15px;
+    background: rgb(248, 162, 91);
+}
+
+.VISA4 {
+    position: absolute;
+    font-size: 14px;
+    font-weight: bolder;
+    top: 120px;
+    margin: 0 207px;
+    background: rgb(248, 162, 91);
+}
+
+.rect5 {
+    height: 150px;
+    width: 270px;
+    border: 2px dotted grey;
+    border-radius: 15px;
+    position: relative;
+    margin: 30px 0;
+    bottom: 360px;
+    left: 580px;
+}
+
+.rect5 a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    left: 0;
+    right: 0;
+    color: white;
+    margin: 0 90px;
+}
+
+.rect5 i {
+    margin: 70px 5px;
+}
+
+.amount {
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 20px 0;
+}
+
+.amount {
+    margin-top: -300px;
+}
+
+.amount {
+    display: flex;
+    align-items: space-evenly;
+    justify-content: space-around;
+}
+
+.amount a {
+    text-decoration: none;
+}
+
+.total_earns,
+.total_spend,
+.spending-g {
+    color: grey;
+    font-size: 12px;
+    position: relative;
+    bottom: 10px;
+}
+
+.price1 {
+    color: white;
+    font-size: 14px;
+    position: relative;
+    top: 11px;
+    right: 75px;
+    font-size: 14px;
+}
+
+.price2 {
+    color: white;
+    font-size: 14px;
+    position: relative;
+    top: 11px;
+    right: 85px;
+}
+
+.price3 {
+    color: white;
+    font-size: 14px;
+    position: relative;
+    top: 11px;
+    right: 78px;
+    font-size: 14px;
+}
+
+.amount i {
+    color: rgb(19, 17, 17);
+    border: 1px solid;
+    border-radius: 30%;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+
+}
+
+.t-spending i {
+    background: rgb(230, 196, 230);
+    margin: 20px 8px;
+}
+
+.total_spend {
+    top: -120px 0;
+}
+
+.earnings i {
+    background: rgb(45, 231, 231);
+    margin: 20px 8px;
+}
+
+.s-goal i {
+    background: rgb(252, 220, 160);
+    margin: 20px 8px;
+}
+
+.transaction {
+    padding: 15px;
+    margin: 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 885px;
+}
+
+.trans {
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.trans-icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.trans-icon i {
+    margin: 0 10px;
+    color: #666666;
+}
+
+.cal {
+    color: white;
+    font-size: 11px;
+}
+
+.calender2 a {
+    text-decoration: none;
+}
+
+#all,
+#revenses,
+#expenses {
+    color: white;
+    border: 1px solid grey;
+    border-radius: 20px;
+    font-size: 11px;
+    margin: 2px;
+}
+
+#all {
+    background: grey;
+    width: 55px;
+    height: 30px;
+}
+
+#revenses,
+#expenses {
+    background: transparent;
+    width: 95px;
+    height: 30px;
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-wrapper {
+    margin-bottom: 300px;
+    margin: 5% 2%;
+}
+
+.details-card {
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    height: 790px;
+    margin-top: -70%;
+}
+
+.detail-card {
+    color: white;
+    font-size: 12px;
+}
+
+.detail-icon {
+    margin-top: -18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.fa-plus,
+.fa-ellipsis {
+    padding: 0 5px;
+    color: grey;
+}
+
+.rect6 {
+    height: 150px;
+    width: 270px;
+    border: 1px solid;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, rgb(206, 241, 206) 70%, rgb(26, 192, 123) 50%);
+    position: relative;
+    margin: 100px 0;
+    bottom: 0px;
+    left: 0;
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.rect6 img {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    left: 200px;
+    top: 20px;
+    background: transparent;
+    z-index: 1;
+}
+
+.shopping6 {
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    top: 30px;
+    margin: 0 15px;
+    background: rgb(206, 241, 206);
+}
+
+.name6 {
+    position: absolute;
+    font-size: 14px;
+    top: 80px;
+    margin: 0 15px;
+    background: rgb(206, 241, 206);
+}
+
+.ast6 {
+    position: absolute;
+    font-size: 14px;
+    top: 80px;
+    margin-left: 140px;
+    font-weight: bold;
+    font-size: 16px;
+    background: rgb(206, 241, 206);
+}
+
+.exp6 {
+    position: absolute;
+    font-size: 14px;
+    top: 120px;
+    margin: 0 15px;
+    background: rgb(26, 192, 123);
+}
+
+.VISA6 {
+    position: absolute;
+    font-size: 14px;
+    font-weight: bolder;
+    top: 120px;
+    margin: 0 207px;
+    background: rgb(26, 192, 123);
+}
+
+.card-num {
+    color: white;
+    font-size: 11px;
+    padding: 20px 0;
+}
+
+.pin {
+    font-size: 16px;
+}
+
+.expire-date {
+    color: white;
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+.vl1 {
+    border-left: 2px solid grey;
+    height: 25px;
+    left: 38%;
+    margin-left: 100px;
+    margin-top: -33px;
+    background: transparent;
+}
+
+.cvv__ {
+    color: white;
+    font-size: 12px;
+    padding: 5px 0;
+    margin: 10px;
+    margin-top: -34px;
+    margin-left: 120px;
+}
+
+.vl2 {
+    border-left: 2px solid grey;
+    height: 25px;
+    left: 38%;
+    margin-left: 160px;
+    margin-top: -42px;
+    background: transparent;
+}
+
+.level {
+    color: white;
+    font-size: 12px;
+    padding: 5px 0;
+    margin: 10px;
+    margin-top: -34px;
+    margin-left: 177px;
+}
+
+.hl {
+    border: 1px solid grey;
+    width: 220px;
+    margin: 20px 0;
+}
+
+.sl {
+    color: white;
+    font-size: 12px;
+    padding: 20px 0;
+}
+
+.dl {
+    color: white;
+    font-size: 10px;
+    padding: -10px 0;
+}
+
+.hl2 {
+    border-left: 70px solid rgb(26, 192, 123);
+    border-radius: 5px;
+    height: 9px;
+    width: 200px;
+    background: grey;
+    margin: 10px 0;
+}
+
+.dl-price {
+    color: white;
+    font-size: 11px;
+}
+
+.percentage {
+    margin: 0 45px;
+}
+
+.fa-plus {
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.fa-ellipsis {
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0 10px;
+}
+
+.container .fa-envelope {
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0 10px;
+    margin-left: 5px;
+}
+
+.fa-filter {
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.fa-calendar-week {
+    border: 1px solid grey;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.cal2 {
+    font-size: 12px;
+    padding: 0 5px;
+}
+
+.container .fa-square-poll-vertical {
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.fa-clock {
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.fa-comments {
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.container .fa-wallet {
+    border: 1px solid grey;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.transaction .fa-square-poll-vertical{
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 5px;
+}
+.Wallet2 {
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.fa-bell{
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 100%;
+}
+.menu1 .fa-wallet, .fa-envelope, .fa-square-poll-vertical, .fa-house, .fa-gear, .fa-arrow-right-arrow-left {
+    border: none solid grey;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#all, #revenses, #expenses:hover{
+    cursor: pointer;
+}
+
+#all:hover{
+    background-color: rgb(52, 240, 177);
+    color:black;
+}
+
+#revenses:hover{
+    background-color: rgb(52, 240, 177);
+    color:black;
+}
+
+#expenses:hover{
+    background-color: rgb(52, 240, 177);
+    color:black;
+}
